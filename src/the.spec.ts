@@ -13,6 +13,8 @@ describe('playwright-the', () => {
 
   it('button right of a div', () => expect(the('button').rightOf('div')).toBe('button:right-of(div)'));
 
+  it('button near a div', () => expect(the('button').near('div')).toBe('button:near(div)'));
+
   it('button inside a div', () => expect(the('button').inside('div')).toBe('div button'));
 
   it('simple text selector', () => expect(the.text('Label')).toBe(':text("Label")'));

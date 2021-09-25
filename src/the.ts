@@ -4,6 +4,7 @@ const below = (subSelect: string) => `:below(${subSelect})`;
 const above = (subSelect: string) => `:above(${subSelect})`;
 const leftOf = (subSelect: string) => `:left-of(${subSelect})`;
 const rightOf = (subSelect: string) => `:right-of(${subSelect})`;
+const near = (subSelect: string) => `:near(${subSelect})`;
 const inside = (subSelect: string) => subSelect + ' ';
 
 const theElement = (element = '') => ({
@@ -13,6 +14,7 @@ const theElement = (element = '') => ({
   above: (subSelect: string) => element + above(subSelect),
   leftOf: (subSelect: string) => element + leftOf(subSelect),
   rightOf: (subSelect: string) => element + rightOf(subSelect),
+  near: (subSelect: string) => element + near(subSelect),
   inside: (subSelect: string) => inside(subSelect) + element,
 });
 
@@ -23,6 +25,7 @@ interface LayoutHelper {
   above: (subSelect: string) => string;
   rightOf: (subSelect: string) => string;
   leftOf: (subSelect: string) => string;
+  near: (subSelect: string) => string;
   inside: (subSelect: string) => string;
 }
 
@@ -37,6 +40,7 @@ export const the: TheFunction = Object.assign(theElement, {
   above,
   leftOf,
   rightOf,
+  near,
   inside,
 });
 
