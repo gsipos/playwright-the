@@ -10,5 +10,5 @@ updates:
       - 'gsipos'
     schedule:
       interval: 'monthly'
-    commit-message: 
+    commit-message:
       prefix: 'chore: '

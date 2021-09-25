@@ -7,37 +7,37 @@ const rightOf = (subSelect: string) => `:right-of(${subSelect})`;
 const inside = (subSelect: string) => subSelect + ' ';
 
 const theElement = (element = '') => ({
-    text: (txt: string) => element + text(txt),
-    hasText: (txt: string) => element + hasText(txt),
-    below: (subSelect: string) => element + below(subSelect),
-    above: (subSelect: string) => element + above(subSelect),
-    leftOf: (subSelect: string) => element + leftOf(subSelect),
-    rightOf: (subSelect: string) => element + rightOf(subSelect),
-    inside: (subSelect: string) => inside(subSelect) + element,
+  text: (txt: string) => element + text(txt),
+  hasText: (txt: string) => element + hasText(txt),
+  below: (subSelect: string) => element + below(subSelect),
+  above: (subSelect: string) => element + above(subSelect),
+  leftOf: (subSelect: string) => element + leftOf(subSelect),
+  rightOf: (subSelect: string) => element + rightOf(subSelect),
+  inside: (subSelect: string) => inside(subSelect) + element,
 });
 
 interface LayoutHelper {
-    text: (txt: string) => string;
-    hasText: (txt: string) => string;
-    below: (subSelect: string) => string;
-    above: (subSelect: string) => string;
-    rightOf: (subSelect: string) => string;
-    leftOf: (subSelect: string) => string;
-    inside: (subSelect: string) => string;
+  text: (txt: string) => string;
+  hasText: (txt: string) => string;
+  below: (subSelect: string) => string;
+  above: (subSelect: string) => string;
+  rightOf: (subSelect: string) => string;
+  leftOf: (subSelect: string) => string;
+  inside: (subSelect: string) => string;
 }
 
 interface TheFunction extends LayoutHelper {
-    (element: string): LayoutHelper;
+  (element: string): LayoutHelper;
 }
 
 export const the: TheFunction = Object.assign(theElement, {
-    text,
-    hasText,
-    below,
-    above,
-    leftOf,
-    rightOf,
-    inside,
+  text,
+  hasText,
+  below,
+  above,
+  leftOf,
+  rightOf,
+  inside,
 });
 
 export default the;
