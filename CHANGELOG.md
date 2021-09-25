@@ -1,3 +1,13 @@
+#### 0.2.2 (2021-09-25)
+
+##### Documentation Changes
+
+*  added examples to readme ([0da6a7eb](https://github.com/gsipos/playwright-the/commit/0da6a7ebf2edbc89985c7459a09693d1987ec3f6))
+
+##### New Features
+
+*  added near selector ([3353e89b](https://github.com/gsipos/playwright-the/commit/3353e89b9b30e52cf8b14e7b6a220f4277958c12))
+
 #### 0.2.1 (2021-09-25)
 
 ##### Build System / Dependencies
