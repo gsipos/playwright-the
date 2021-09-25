@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    labels:
+      - 'dependencies'
+    assignees:
+      - 'gsipos'
+    reviewers:
+      - 'gsipos'
+    schedule:
+      interval: 'monthly'
+    commit-message: 
+      prefix: 'chore: '
