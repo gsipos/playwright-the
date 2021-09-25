@@ -7,6 +7,7 @@
   "files": [
     "dist/"
   ],
+  "types": "./dist/cjs/the.d.ts",
   "scripts": {
     "format": "prettier --write .",
     "prettier": "prettier --check .",
