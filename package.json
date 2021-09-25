@@ -14,7 +14,9 @@
     "test": "jest --watch",
     "tsc": "tsc -p . --module es2015 --outDir dist/esm",
     "posttsc": "tsc -p . --module commonjs --outDir dist/cjs",
-    "changelog": "changelog"
+    "changelog": "changelog",
+    "preversion": "npm run prettier && npm run tsc && npm run coverage",
+    "version": "changelog"
   },
   "repository": {
     "type": "git",
