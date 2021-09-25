@@ -16,7 +16,7 @@
     "posttsc": "tsc -p . --module commonjs --outDir dist/cjs",
     "changelog": "changelog",
     "preversion": "npm run prettier && npm run tsc && npm run coverage",
-    "version": "changelog"
+    "version": "changelog && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
