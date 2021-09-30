@@ -2,8 +2,8 @@
   "name": "playwright-the",
   "version": "0.2.2",
   "description": "Easier working with Playwright layout selectors",
-  "main": ".dist/cjs/the.js",
-  "module": ".dist/esm/the.js",
+  "main": "./dist/cjs/the.js",
+  "module": "./dist/esm/the.js",
   "files": [
     "dist/"
   ],
